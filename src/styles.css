@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #fff;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #fff;
+}
+
+body {
+  color: #002266;
+}
+
+.input-spacing{
+	margin-right:48px;
+}
+.input-spacing2{
+	margin-right:56px;
+}
+
+.container-form{
+	border:1px solid red;
+	border-radius: 15px;
+	padding:20px;
+	margin-top:10px;
+	margin-bottom: 10px;
+	color:red;
+}
+
+input[type=radio] {
+    display: block;
+    margin: 0 auto;
+}
+.radio-spacing{
+	margin-right: 33px;
+}
+
+.heading-spacing{
+	margin-bottom: 20px;
+}

@@ -1,0 +1,511 @@
+
+	<div class="container">
+		<h1>REVISED FIBROMYALGIA</h1>
+		<h2>IMPACT QUESTIONNAIRE (FIQR)</h2>
+	</div>
+	<div class="container container-form">
+		<div class="col-md-12" style="display: flex">
+			<div class="col-md-5">
+					<label>Last Name:</label>
+				<input type="text" name="" class="">
+			</div>
+			<div class="col-md-7">
+				
+				<label class="input-spacing2">Duration of FM symptoms (years):</label>
+				<input type="text" name="" class="">
+			</div>
+		</div>
+		<div class="col-md-12" style="display: flex">
+			<div class="col-md-5">
+					<label>First Name:</label>
+				<input type="text" name="" class="">
+			</div>
+			<div class="col-md-7">
+				
+				<label>Time since FM was first diagnosed (years):</label>
+				<input type="text" name="" class="">
+			</div>
+		</div>
+		<div class="col-md-12" style="display: flex">
+			<div class="col-md-5" >
+				<label class="input-spacing">Age:</label>
+				<input type="text" name="" class="">
+			</div>
+			
+		</div>
+		
+	</div>
+	<div class="row">
+		<div class="container">
+			
+			<h2>DOMAIN 1: FUNCTION</h2>
+			<p>
+				<strong>Directions:</strong> For each of the following 9 questions, check the box that best indicates how much your Fibromyalgia made it
+				difficult to perform each of the following activities during the past 7 days. If you did not perform a particular activity in the
+				last 7 days, rate the difficulty for the last time you performed the activity. If you can’t perform an activity, check the last box.
+			</p>
+
+				<h5 class="heading-spacing">
+					Brush or comb your hair
+				</h5>
+				<div style="display: flex;">
+				
+					<div class="col-md-2 ">
+						<p><strong>No Difficulty</strong></p>
+					</div>
+					<div class="col-md-7">
+					
+					
+
+						<label *ngFor="let choice of choices" class="radio-spacing">
+							<input type="radio" name="domain1-1" value="{{choice}}" (change)="radioChangeHandler1($event)">{{choice}}
+						</label>
+						
+					</div>
+					<div class="col-md-3">
+						<p><strong>Very difficult</strong></p>
+					</div>
+				</div>
+				<hr>
+
+				<h5 class="heading-spacing">
+					Walk continuously for 20 minutes
+				</h5>
+				<div style="display: flex;">
+				
+					<div class="col-md-2 ">
+						<p><strong>No Difficulty</strong></p>
+					</div>
+					<div class="col-md-7">
+						<label *ngFor="let choice of choices" class="radio-spacing">
+							<input type="radio" name="domain1-2" value="{{choice}}" (change)="radioChangeHandler1($event)">{{choice}}
+						</label>
+					</div>
+					<div class="col-md-3">
+						<p><strong>Very difficult</strong></p>
+					</div>
+				</div>
+				<hr>
+
+				<h5 class="heading-spacing">
+					Prepare a homemade meal
+				</h5>
+				<div style="display: flex;">
+				
+					<div class="col-md-2 ">
+						<p><strong>No Difficulty</strong></p>
+					</div>
+					<div class="col-md-7">
+						<label *ngFor="let choice of choices" class="radio-spacing">
+							<input type="radio" name="domain1-3" value="{{choice}}" (change)="radioChangeHandler1($event)">{{choice}}
+						</label>
+					</div>
+					<div class="col-md-3">
+						<p><strong>Very difficult</strong></p>
+					</div>
+				</div>
+				<hr>
+
+				<h5 class="heading-spacing">
+					Vacuum, scrub, or sweep floors
+				</h5>
+				<div style="display: flex;">
+				
+					<div class="col-md-2 ">
+						<p><strong>No Difficulty</strong></p>
+					</div>
+					<div class="col-md-7">
+						<label *ngFor="let choice of choices" class="radio-spacing">
+							<input type="radio" name="domain1-3" value="{{choice}}" (change)="radioChangeHandler1($event)">{{choice}}
+						</label>
+					</div>
+					<div class="col-md-3">
+						<p><strong>Very difficult</strong></p>
+					</div>
+				</div>
+				<hr>
+
+				<h5 class="heading-spacing">
+					Lift and carry a bag full of groceries
+				</h5>
+				<div style="display: flex;">
+				
+					<div class="col-md-2 ">
+						<p><strong>No Difficulty</strong></p>
+					</div>
+					<div class="col-md-7">
+						<label *ngFor="let choice of choices" class="radio-spacing">
+							<input type="radio" name="domain1-4" value="{{choice}}" (change)="radioChangeHandler1($event)">{{choice}}
+						</label>
+					</div>
+					<div class="col-md-3">
+						<p><strong>Very difficult</strong></p>
+					</div>
+				</div>
+				<hr>
+
+
+				<h5 class="heading-spacing">
+					Climb one flight of stairs
+				</h5>
+				<div style="display: flex;">
+				
+					<div class="col-md-2 ">
+						<p><strong>No Difficulty</strong></p>
+					</div>
+					<div class="col-md-7">
+						<label *ngFor="let choice of choices" class="radio-spacing">
+							<input type="radio" name="domain1-5" value="{{choice}}" (change)="radioChangeHandler1($event)">{{choice}}
+						</label>
+					</div>
+					<div class="col-md-3">
+						<p><strong>Very difficult</strong></p>
+					</div>
+				</div>
+				<hr>
+
+
+				<h5 class="heading-spacing">
+					Change bedsheets
+				</h5>
+				<div style="display: flex;">
+				
+					<div class="col-md-2 ">
+						<p><strong>No Difficulty</strong></p>
+					</div>
+					<div class="col-md-7">
+						<label *ngFor="let choice of choices" class="radio-spacing">
+							<input type="radio" name="domain1-6" value="{{choice}}" (change)="radioChangeHandler1($event)">{{choice}}
+						</label>
+					</div>
+					<div class="col-md-3">
+						<p><strong>Very difficult</strong></p>
+					</div>
+				</div>
+				<hr>
+
+				<h5 class="heading-spacing">
+					Sit in a chair for 45 minutes
+				</h5>
+				<div style="display: flex;">
+				
+					<div class="col-md-2 ">
+						<p><strong>No Difficulty</strong></p>
+					</div>
+					<div class="col-md-7">
+						<label *ngFor="let choice of choices" class="radio-spacing">
+							<input type="radio" name="domain1-7" value="{{choice}}" (change)="radioChangeHandler1($event)">{{choice}}
+						</label>
+					</div>
+					<div class="col-md-3">
+						<p><strong>Very difficult</strong></p>
+					</div>
+				</div>
+				<hr>
+
+				<h5 class="heading-spacing">
+					Shop for groceries
+				</h5>
+				<div style="display: flex;">
+				
+					<div class="col-md-2 ">
+						<p><strong>No Difficulty</strong></p>
+					</div>
+					<div class="col-md-7">
+						<label *ngFor="let choice of choices" class="radio-spacing">
+							<input type="radio" name="domain1-8" value="{{choice}}" (change)="radioChangeHandler1($event)">{{choice}}
+						</label>
+					</div>
+					<div class="col-md-3">
+						<p><strong>Very difficult</strong></p>
+					</div>
+				</div>
+				
+				<br>
+				<div>
+					<strong>DOMAIN 1 SUBTOTAL:	<b>{{domain1sum}}</b></strong>
+				</div>
+				<br>
+		</div>
+		<div class="container">
+		<hr>
+			
+			<h2>DOMAIN 2: OVERALL</h2>
+			<p>
+				<strong>Directions:</strong> For each of the following 2 questions, check the box that best describes the overall impact of
+				your Fibromyalgia over the last 7 days.
+			</p>
+
+				<h5 class="heading-spacing">
+					Fibromyalgia prevented me from accomplishing goals for the week
+				</h5>
+				<div style="display: flex;">
+				
+					<div class="col-md-2 ">
+						<p><strong>Never</strong></p>
+					</div>
+					<div class="col-md-7">
+						<label *ngFor="let choice of choices" class="radio-spacing">
+							<input type="radio" name="domain2-1" value="{{choice}}" (change)="radioChangeHandler2($event)">{{choice}}
+						</label>
+					</div>
+					<div class="col-md-3">
+						<p><strong>Always</strong></p>
+					</div>
+				</div>
+				<hr>
+
+				<h5 class="heading-spacing">
+					I was completely overwhelmed by my fibromyalgia symptoms
+				</h5>
+				<div style="display: flex;">
+				
+					<div class="col-md-2 ">
+						<p><strong>Never</strong></p>
+					</div>
+					<div class="col-md-7">
+						<label *ngFor="let choice of choices" class="radio-spacing">
+							<input type="radio" name="domain2-2" value="{{choice}}" (change)="radioChangeHandler2($event)">{{choice}}
+						</label>
+					</div>
+					<div class="col-md-3">
+						<p><strong>Never</strong></p>
+					</div>
+				</div>
+				<br>
+				<div>
+					<strong>DOMAIN 2 SUBTOTAL: <b>{{domain2sum}}</b></strong>
+				</div>
+				<br>
+				<hr>
+
+			</div>
+			<div class="container">
+			
+			<h2>DOMAIN 3: SYMPTOMS</h2>
+			<p>
+				<strong>Directions:</strong> For each of the following 10 questions, select the box that best indicates your intensity level of
+				these common Fibromyalgia symptoms over the past 7 days.
+
+				<h5 class="heading-spacing">
+					Please rate the level of pain
+				</h5>
+				<div style="display: flex;">
+				
+					<div class="col-md-2 ">
+						<p><strong>No pain</strong></p>
+					</div>
+					<div class="col-md-7">
+						<label *ngFor="let choice of choices" class="radio-spacing">
+							<input type="radio" name="domain3-1" value="{{choice}}" (change)="radioChangeHandler3($event)">{{choice}}
+						</label>
+					</div>
+					<div class="col-md-3">
+						<p><strong>Unbearable pain</strong></p>
+					</div>
+				</div>
+				<hr>
+
+				<h5 class="heading-spacing">
+					Please rate your level of energy
+				</h5>
+				<div style="display: flex;">
+				
+					<div class="col-md-2 ">
+						<p><strong>Lots of energy</strong></p>
+					</div>
+					<div class="col-md-7">
+						<label *ngFor="let choice of choices" class="radio-spacing">
+							<input type="radio" name="domain3-1" value="{{choice}}" (change)="radioChangeHandler3($event)">{{choice}}
+						</label>
+					</div>
+					<div class="col-md-3">
+						<p><strong>No energy</strong></p>
+					</div>
+				</div>
+				<hr>
+
+				<h5 class="heading-spacing">
+					Please rate your level of stiffness
+				</h5>
+				<div style="display: flex;">
+				
+					<div class="col-md-2 ">
+						<p><strong>No stiffness</strong></p>
+					</div>
+					<div class="col-md-7">
+						<label *ngFor="let choice of choices" class="radio-spacing">
+							<input type="radio" name="domain3-2" value="{{choice}}" (change)="radioChangeHandler3($event)">{{choice}}
+						</label>
+					</div>
+					<div class="col-md-3">
+						<p><strong>Severe stiffness</strong></p>
+					</div>
+				</div>
+				<hr>
+
+				<h5 class="heading-spacing">
+					Please rate the quality of your sleep
+				</h5>
+				<div style="display: flex;">
+				
+					<div class="col-md-2 ">
+						<p><strong>Awoke well rested</strong></p>
+					</div>
+					<div class="col-md-7">
+						<label *ngFor="let choice of choices" class="radio-spacing">
+							<input type="radio" name="domain3-4" value="{{choice}}" (change)="radioChangeHandler3($event)">{{choice}}
+						</label>
+						
+					</div>
+					<div class="col-md-3">
+						<p><strong>Awoke very tired</strong></p>
+					</div>
+				</div>
+				<hr>
+
+				<h5 class="heading-spacing">
+					Please rate your level of depression
+				</h5>
+				<div style="display: flex;">
+				
+					<div class="col-md-2 ">
+						<p><strong>No depression</strong></p>
+					</div>
+					<div class="col-md-7">
+						<label *ngFor="let choice of choices" class="radio-spacing">
+							<input type="radio" name="domain3-5" value="{{choice}}" (change)="radioChangeHandler3($event)">{{choice}}
+						</label>
+					</div>
+					<div class="col-md-3">
+						<p><strong>Very depressed</strong></p>
+					</div>
+				</div>
+				<hr>
+
+
+				<h5 class="heading-spacing">
+					Please rate your level of memory problems
+				</h5>
+				<div style="display: flex;">
+				
+					<div class="col-md-2 ">
+						<p><strong>Good memory</strong></p>
+					</div>
+					<div class="col-md-7">
+						<label *ngFor="let choice of choices" class="radio-spacing">
+							<input type="radio" name="domain3-6" value="{{choice}}" (change)="radioChangeHandler3($event)">{{choice}}
+						</label>
+					</div>
+					<div class="col-md-3">
+						<p><strong>Very poor memory</strong></p>
+					</div>
+				</div>
+				<hr>
+
+
+				<h5 class="heading-spacing">
+					Please rate your level of anxiety
+				</h5>
+				<div style="display: flex;">
+				
+					<div class="col-md-2 ">
+						<p><strong>Not anxious</strong></p>
+					</div>
+					<div class="col-md-7">
+						<label *ngFor="let choice of choices" class="radio-spacing">
+							<input type="radio" name="domain3-7" value="{{choice}}" (change)="radioChangeHandler3($event)">{{choice}}
+						</label>
+					</div>
+					<div class="col-md-3">
+						<p><strong>Very anxious</strong></p>
+					</div>
+				</div>
+				<hr>
+
+				<h5 class="heading-spacing">
+					Please rate your level of tenderness to touch
+				</h5>
+				<div style="display: flex;">
+				
+					<div class="col-md-2 ">
+						<p><strong>No tenderness</strong></p>
+					</div>
+					<div class="col-md-7">
+						<label *ngFor="let choice of choices" class="radio-spacing">
+							<input type="radio" name="domain3-8" value="{{choice}}" (change)="radioChangeHandler3($event)">{{choice}}
+						</label>
+					</div>
+					<div class="col-md-3">
+						<p><strong>Very tender</strong></p>
+					</div>
+				</div>
+				<hr>
+
+				<h5 class="heading-spacing">
+					Please rate your level of balance problems
+				</h5>
+				<div style="display: flex;">
+				
+					<div class="col-md-2 ">
+						<p><strong>No imbalance</strong></p>
+					</div>
+					<div class="col-md-7">
+						<label *ngFor="let choice of choices" class="radio-spacing">
+							<input type="radio" name="domain3-9" value="{{choice}}" (change)="radioChangeHandler3($event)">{{choice}}
+						</label>
+					</div>
+					<div class="col-md-3">
+						<p><strong>Severe imbalance</strong></p>
+					</div>
+				</div>
+				
+				<h5 class="heading-spacing">
+					Please rate your level of tenderness to touch
+				</h5>
+				<div style="display: flex;">
+				
+					<div class="col-md-2 ">
+						<p><strong>No sensitivity</strong></p>
+					</div>
+					<div class="col-md-7">
+						<label *ngFor="let choice of choices" class="radio-spacing">
+							<input type="radio" name="domain3-10" value="{{choice}}" (change)="radioChangeHandler3($event)">{{choice}}
+						</label>
+					</div>
+					<div class="col-md-3">
+						<p><strong>Extreme sensitivity</strong></p>
+					</div>
+				</div>
+				<!-- end questions -->
+				<br>
+				<div>
+					<strong>DOMAIN 3 SUBTOTAL: <b>{{domain3sum}}</b></strong>
+				</div>
+				<hr>
+				<br>
+				<h2 align="center">Final Score: <u><b>{{finalScore}}</b></u></h2>
+
+				<br>
+				<!-- end questionnaire -->
+				<br>
+				<p><strong>SCORING:</strong></p>
+				<p>
+					1) Sum the scores for each of the 3 domains (function, overall, and symptoms).
+				</p>
+				<p>
+					2) Divide domain 1 score by 3, leave domain 2 score unchanged, and divide domain 3 score by 2.	
+				</p>
+				<p>
+					3) Add the 3 resulting domain scores to obtain the total FIQR score.
+				</p>
+
+
+
+		</div>
+
+
+	</div>
+
+
+

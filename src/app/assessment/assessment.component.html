@@ -1,0 +1,180 @@
+<h1 align="center">chalder fatigue scale</h1>
+
+	<div class="container">
+		<p align="center">We would like to know more about any problems you have had with feeling tired, weak or lacking in energy in the last month. Please answer ALL the questions by ticking the answer which applies to you most closely. If you have been feeling tired for a long while, then compare yourself to how
+		you felt when you were last well. Please tick only one box per line.
+		</p>
+
+
+		<table>
+		  <tr>
+		    <th></th>
+		   
+		 		<th>less than usual</th>
+			    <th>no more than usual</th>
+			    <th>more than usual</th>
+			    <th>much more than usual</th>
+		 	
+	
+		    
+		  </tr>
+		  <tr >
+		    <td>do you have problems with tiredness?</td>
+		    		
+
+			    		<td  *ngFor="let choice of choices" >
+				   			<input
+				   			 type="radio"
+				   			 name="question1"
+				   			 value="{{choice}}"
+				   			 (change)="radioChangeHandler($event)"
+				   			>
+			   			</td>	
+		    	
+
+		   			
+		   </tr>
+		  <tr>
+		    <td>do you need to rest more?</td>
+		  	
+		     	<td  *ngFor="let choice of choices" >
+		   			<input
+		   			 type="radio"
+		   			 name="question2"
+		   			 value="{{choice}}"
+		   			 (change)="radioChangeHandler($event)">
+		   		</td>
+		   
+		    	
+		   			
+		
+		  </tr>
+		  <tr>
+		    <td>do you feel sleepy or drowsy?</td>
+		  
+		    	
+		     	<td  *ngFor="let choice of choices" >
+		   			<input
+		   			 type="radio"
+		   			 name="question3"
+		   			 value="{{choice}}"
+		   			 (change)="radioChangeHandler($event)">
+		   		</td>
+		
+		  </tr>
+		  <tr>
+		    <td>do you have problems starting things?</td>
+			  
+			    	
+		     	<td  *ngFor="let choice of choices" >
+		   			<input
+		   			 type="radio"
+		   			 name="question4"
+		   			 value="{{choice}}"
+		   			 (change)="radioChangeHandler($event)">
+		   		</td>
+		
+		  </tr>
+		  <tr>
+		    <td>do you lack energy?</td>
+		    	
+		     	<td  *ngFor="let choice of choices" >
+		   			<input
+		   			 type="radio"
+		   			 name="question5"
+		   			 value="{{choice}}"
+		   			 (change)="radioChangeHandler($event)">
+		   		</td>
+		  </tr>
+		  <tr>
+		    <td>do you have less strength in your muscles?</td>
+		    	
+		     	<td  *ngFor="let choice of choices" >
+		   			<input
+		   			 type="radio"
+		   			 name="question6"
+		   			 value="{{choice}}"
+		   			 (change)="radioChangeHandler($event)">
+		   		</td>
+		  </tr>
+		  <tr>
+		  	<td>do you feel weak?</td>
+		    	
+		     	<td  *ngFor="let choice of choices" >
+		   			<input
+		   			 type="radio"
+		   			 name="question7"
+		   			 value="{{choice}}"
+		   			 (change)="radioChangeHandler($event)">
+		   		</td>
+		  </tr>
+		  <tr>
+		  	<td>do you have difficulties concentrating?</td>
+		    	
+		     	<td  *ngFor="let choice of choices" >
+		   			<input
+		   			 type="radio"
+		   			 name="question8"
+		   			 value="{{choice}}"
+		   			 (change)="radioChangeHandler($event)">
+		   		</td>
+		  </tr>
+		  <tr>
+		  	<td>do you make slips of the tongue when speaking?</td>
+		    	
+		     	<td  *ngFor="let choice of choices" >
+		   			<input
+		   			 type="radio"
+		   			 name="question9"
+		   			 value="{{choice}}"
+		   			 (change)="radioChangeHandler($event)">
+		   		</td>
+		  </tr>
+		  <tr>
+		  	<td>do you find it more difficult to find the right word?</td>
+		  		
+		     	<td  *ngFor="let choice of choices" >
+		   			<input
+		   			 type="radio"
+		   			 name="question10"
+		   			 value="{{choice}}"
+		   			 (change)="radioChangeHandler($event)">
+		   		</td>
+			
+		  </tr>
+		  <tr>
+		  	<th></th>
+		    <th>better than usual</th>
+		    <th>no worse than usual</th>
+		    <th>worse than usual</th>
+		    <th>much worse than usual</th>
+		  </tr>
+		  <tr>
+		  	<td>how is your memory?</td>
+		    	
+		     	<td  *ngFor="let choice of choices" >
+		   			<input
+		   			 type="radio"
+		   			 name="question11"
+		   			 value="{{choice}}"
+		   			 (change)="radioChangeHandler($event)">
+		   		</td>
+		
+		  </tr>
+		</table>
+		<br>
+		<p>This scale can be scored “bimodally” with columns representing 0, 0, 1 & 1 and a range from 0 to 11 with a total of 4 or more qualifying for “caseness”. Alternatively it can be scored in “Likert” style 0, 1, 2 & 3 with a range from 0 to 33. Mean “bimodal” score for CFS sufferers was 9.14 (SD 2.73) and for a community sample 3.27 (SD 3.21). Mean “Likert” score was 24.4 (SD 5.8) and 14.2 (SD 4.6).</p>
+		<br>
+		<div align="center">
+			<h3>
+				total(0-33) = <b>{{selectedOption}}</b> 
+			</h3>
+		</div>
+		<hr>
+		<p>
+			Cella, M. and T. Chalder (2010). "Measuring fatigue in clinical and community settings." J Psychosom Res 69(1): 17-22. This study involved 361 CFS sufferers and 1615 individuals from the community. Average age was in the 30’s. Fatigue levels were similar for males and females. A score of 29 discriminated between CFS sufferers and the community sample in 96% of cases and a score in the 30’s discriminated in 100% of cases. The CFS sufferers also scored a mean of 26.99 on the Work & Social Adjustment Scale (W&SAS) with a SD of 8.6 (i.e. about 70% scoring between 18.4 and 35.6).
+		</p>
+		<hr>
+		<hr>
+	</div>
+	
