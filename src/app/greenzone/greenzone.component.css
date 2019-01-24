@@ -1,23 +1,15 @@
-	table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
- 
-}
-
-td, th {
-  border: 1px solid black;
-  text-align: left;
-  padding: 8px;
-}
-th:nth-child(even){
-	width: 100px;
-}
-
-tr:nth-child(even) {
-  background-color: white;
-  font-variant-caps:
-}
-th{
-	background-color:black;
-	color: white;
-}
+  .input-spacing{
+    margin-top:2px;
+    margin-bottom:30px;
+  }
+  .input-spacing2{
+    margin-top:45px;
+    margin-bottom:30px;
+  }
+  .input-spacing3{
+    margin-top:-6px;
+  }
+  #date{
+    margin-top:10px;
+    margin-right: 5px;
+  }

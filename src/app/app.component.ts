@@ -10,7 +10,9 @@ import { Component, ViewEncapsulation } from '@angular/core';
   			<a routerLink="/fiqr" routerLinkActive="active">FIQR</a>
         <br>
         <a routerLink="/greenzone" routerLinkActive="active">GreenZone</a>
-  			</nav>
+        <br>
+        <a routerLink="/consent" routerLinkActive="active">Consent Form</a>
+        </nav>
   			<router-outlet></router-outlet> `,
   encapsulation: ViewEncapsulation.None,
   
