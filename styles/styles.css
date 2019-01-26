@@ -1,0 +1,59 @@
+
+
+.input-spacing{
+	margin-right:48px;
+}
+.input-spacing2{
+	margin-right:56px;
+}
+
+.container-form{
+	border:1px solid red;
+	border-radius: 15px;
+	padding:20px;
+	margin-top:10px;
+	margin-bottom: 10px;
+	color:red;
+}
+
+input[type=radio] {
+    display: block;
+    margin: 0 auto;
+}
+.radio-spacing{
+	margin-right: 33px;
+}
+
+.heading-spacing{
+	margin-bottom: 20px;
+}
+
+  .input-spacing{
+    margin-top:2px;
+    margin-bottom:30px;
+  }
+  .input-spacing2{
+    margin-top:45px;
+    margin-bottom:30px;
+  }
+  .input-spacing3{
+    margin-top:-6px;
+  }
+  #date{
+    margin-top:10px;
+    margin-right: 5px;
+  }
+
+  .radio-setting{
+	margin-left: 5px;
+	margin-top:5px;
+}
+	#date{
+		margin-top:10px;
+		margin-right: 5px;
+	}
+
+	.consent-heading{
+		margin-left:12px;
+		margin-bottom: 10px;
+	}
